@@ -24,6 +24,7 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm cache clean --force
+          npm install --save-dev @babel/plugin-proposal-private-property-in-object
           npm install 
           npm run build --if-present
           npm run test --if-present
